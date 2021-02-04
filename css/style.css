@@ -1,15 +1,7 @@
-.flex-center{ display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
-.flex{ display: -webkit-box; display: -ms-flexbox; display: flex; }
-/* Justify-content */
-.j-betwen{ -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
-.j-around{ -ms-flex-pack: distribute; justify-content: space-around; }
-.j-center{ -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
-.end{ -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
-/* Align-items */
 .center-items{ -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 /* Fonts */
 .roboto{ font-family: 'Roboto'; }
-/*          */
+
 body{
     padding-top: 101px;
 }
@@ -17,6 +9,11 @@ body{
 	width: 1170px;
 	margin: 0 auto;
 }
+.j-betwen { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+.j-around { -ms-flex-pack: distribute; justify-content: space-around; }
+.j-center { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+.end { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
+
 .navigation{
     position: fixed;
     top: 0;
@@ -28,6 +25,8 @@ body{
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     z-index: 20;
 }
+.flex-center{ display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
 .nav-link{
     padding-right: 23px;
     font-size: 24px;
@@ -49,6 +48,7 @@ body{
     transition: all 0.3s;
     border-radius: 10px;
 }
+.flex{ display: -webkit-box; display: -ms-flexbox; display: flex; }
 .nav-link:hover:after{
     width: 80%;
 }
